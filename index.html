@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo Avançado</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="js/projeto1.js" defer></script>
+</head>
+
+<body>
+    <div class="todo-container">
+        <header>
+            <h1>Todo Avançado</h1>
+        </header>
+        <form id="todo-form">
+            <p>Adiciona a tarefa:</p>
+            <div class="form-control">
+                <input type="text" id="todo-input" placeholder="Qual a tarafa?" />
+                <button type="submit">+
+                    <i class="fa-thin fa-plus"></i>
+                </button>
+            </div>
+        </form>
+        <form id="edit-form" class="hide">
+            <p>Editar tarefa:</p>
+            <div class="form-control">
+                <input type="text" id="edit-input" />
+                <button type="submit">E
+                    <i class="fa-solid fa-check-double"></i>
+                </button>
+            </div>
+            <button id="cancela-edit-btn">Cancelar</button>
+        </form>
+        <div id="toolbar">
+            <div id="search">
+                <h4>Pesquisar:</h4>
+                <form>
+                    <input type="text" id="search-input" placeholder="Buscar">
+                    <button id="erase-butoon">B
+                        <i class="fa-solid fa-delete-left"></i>
+                    </button>
+                </form>
+
+            </div>
+            <div id="filter">
+                <h4>Filtrar:</h4>
+                <select id="filter-select">
+                    <option value="all">Todos</option>
+                    <option value="done">Concluida</option>
+                    <option value="todo">Faltar</option>
+                </select>
+            </div>
+        </div>
+        <div id="todo-list">
+            <div class="todo">
+                <h3>Estudando Javascript</h3>
+                <button class="finish-todo">
+                    OK
+                    <i class="fa-solid fa-check"></i>
+                </button>
+                <button class="edit-todo">E
+                    <i class="fa-solid fa pen"></i>
+                </button>
+                <button class="delete-todo">X
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

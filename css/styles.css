@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    color: cadetblue;
+    box-sizing: border-box;
+}
+
+body{
+    background-image:url("../img/et.png");
+    background-position: auto;
+    background-size: 100%;
+    
+}
+
+button{
+    background-color: darkgrey;
+    color: rgb(4, 0, 255);
+    border-radius: 2px;
+    padding: 1px;
+    font-size: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
+}
+button:hover{
+    background-color: aqua;
+}
+button:hover > i {
+color: aliceblue;
+}
+button i{
+    color: rgb(4,0, 255);
+    font-weight: bold;
+    pointer-events: none;
+}
+
+input, select{
+    padding: 5px;
+}
+
+.hide{
+    display: none;
+}
+.todo-container{
+    width: fit-content;
+    margin-left:100px ;
+    margin-top: 50px;
+    
+    background-color: rgb(255, 255, 255);
+    padding: 50px;
+    border-radius: 15px;
+    border-color: cadetblue ;
+    border-style: ridge ;
+    }
+.todo-container header{
+    text-align: center;
+    padding-bottom: 25px;
+    border-bottom: 1px solid darkgray;
+}
+
+#todo-form, #edit-form{
+    padding: 2px;
+    border-bottom: 2px solid darkgrey;    
+}
+#todo-form p,#edit-form p{
+    margin-bottom: 1px;
+    font-weight: bold
+}
+.form-control{
+    display: flex;
+}
+
+.form-control input{
+    margin-right: 5px;
+}
+
+#cancela-edit-btn{
+    margin-top: 5px;
+}
+
+#toolbar{
+    padding: 2px;
+    display: flex;
+    border-bottom: 2px solid darkgray;
+}
+#toolbar h4{
+    margin-bottom: 2px;
+}
+
+#search{
+    display: flex;
+    border-right: 2px solid darkgray;
+    margin-right: 2px;
+    padding-right: 2px;
+    width: 80%;
+    flex-direction: column;
+}
+#search form{
+    display: flex;
+}
+#search input{
+    width: 100%;
+    margin-right: 2px;
+}
+#filter{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+#filter select{
+    flex: 1;
+}
+.todo{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 2px solid darkgray;
+    transition: .3S;
+}
+.todo h3{
+    flex: 1;
+    font-size: 20px;
+}
+.todo button{
+    margin-left: 5px;
+}
+
+.done{
+    background-color: rgb(20, 83, 41);
+}
+.done h3{
+    color: aliceblue;
+    text-decoration: line-through;
+    font-style: italic;
+}
